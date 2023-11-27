@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Nunito&display=swap');
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url(og.jpg);
+    font-family: 'Bitter', serif;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-size: cover;
+    
+}
+
+header {
+    /* background-color:white; */
+    padding: 10px;
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    position: fixed;
+    margin: 0 auto;
+}
+
+.logo {
+    color: coral;
+    font-size: 49px;
+    text-decoration: none;
+    -webkit-text-stroke: 2px;
+    gap: 3px;
+    
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a
+{
+    font-size: 23px;
+    
+}
+
+
+
+
+/* Add styles for the hover effect on navbar links */
+.nav-links li a {
+    color: coral;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add smooth transition for the hover effect */
+}
+
+.nav-links li a:hover {
+    color: #ff0000; /* Change the color on hover to a gold/yellowish color (you can use any color you prefer) */
+}
+
+/* ... previous CSS styles ... */
+
+/* Add styles for the homepage content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background-image: url(backg.jpg);
+     background-size: cover; 
+    background-position: cover; 
+     opacity: 10; 
+    height: 600px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    color:white;
+    text-align: center;
+    z-index: -0.5; 
+
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+
+    font-style: italic;
+    font-size: 60px;
+}
+.hero span{
+    /* color:green; */
+    color: coral;
+}
+
+.hero p {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 14px;
+}
+
+/* Additional content section styles */
+.content {
+    margin-top: 40px;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+/* Services Section */
+
+
+.head
+{
+    font-family: 'Nunito', sans-serif;
+    /* font-size: 2.5em; */
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    
+}
+.head h1
+{
+    color:black;
+}
+.head span{
+    /* color: green; */
+    color: coral;
+}
+#services{
+    background-color: #000000;
+    margin: 4px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 8px;
+    padding: 18px;
+    border-radius: 12px;
+    /* background-color: rgb(5, 241, 68);  */
+    background-color: #f8f7f2
+    
+     
+}
+#one{
+    color: white;
+}
+
+#services .box img{
+    height: 130px;
+   margin: auto;
+   display: block; 
+   object-fit: cover;
+}
+.box span{
+    /* color: green */
+    color:coral;
+}
+#service .box p{
+    font-family: 'Bitter', serif;
+}
+
+/* plam */
+  .head
+  {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+  }
+  .head span
+  {
+    
+    /* color: green; */
+    color:coral;
+  }
+ 
+  
+   .contactPage{
+    display: flex;
+    justify-content: center;
+   }
+   .contactText
+   {
+    /* color: green; */
+    color:coral;
+
+    font-style: italic;
+    font-size: 57px;
+   }
+   .contactPage img
+   {
+    width: 60%;
+    margin-left: -33px;
+    min-height: 68%;
+   }
+
+   .contactUs
+   {
+    text-align: center;
+    margin-top: 22px;
+   }
+   .contactUs h1
+   {
+    color: coral;
+   }
+   .contactUs input
+   {
+    width: 300px;
+    padding: 8px;
+    height: 33px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    margin-top: 17px;
+   }
+
+   .contactUs button{
+    width: 345px;
+    height: 45px;
+    color: white;
+    border: none;
+    font-size: 22px;
+    background-color:coral;
+    border-radius: 2px;
+    margin-top: 22px;
+   }
+   .footer
+   {
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+   }
+   .footer h1{
+    color:coral;
+   }
+   .footer .footerText
+   {
+    margin-inline: 93px;
+   }
+   .footerText p{
+    margin-top: 11px;
+    font-size: 19px;
+    color: white;
+   }
+   
+/* Responsive Styles */
+ @media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+} 
+.styled-button {
+    /* Background cseolor */
+    background-color: #4caf50;
+    /* Text color */
+    color: white;
+    /* Padding */
+    padding: 10px 20px;
+    /* Border */
+    border: none;
+    /* Rounded corners */
+    border-radius: 5px;
+    /* Hover effect */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .styled-button:hover {
+    background-color: #45a049;
+  }
+  .box {
+    text-align: center;
+}
+  
